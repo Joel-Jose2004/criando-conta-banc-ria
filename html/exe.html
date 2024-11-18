@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../dist/exe.js"></script>
+    <style>
+        
+    #usuario{
+        text-align: center;
+        height: 60%;
+        width: 200px;
+        border:3px solid rgb(237, 159, 14);
+        padding:10px;
+    border-radius: 10px;
+    font-family: arial;
+    margin-top: 15%;
+    color:rgb(237, 159, 14)
+
+    }
+    #usuario input{
+        border-radius: 6px;
+        border-style: none;
+        border:1px solid black;
+    }
+    #usuario button{
+        background-color: rgb(237, 159, 14);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    .cad{
+        display:flex;
+        justify-content: center;
+     
+    }
+    label{
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="cad">
+    <div id="usuario">
+        <h2>Abrir Conta</h2>
+      <label for="idnome">Nome</label><input type="text" name="nome" id="idnome">
+      <label for="idsaldo">Saldo</label><input type="number" name="saldo" id="idsaldo"><p></p>
+      <button onclick="criar()">Criar conta</button>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Modal</title>
+
+  <script src="../dist/gerir.js"></script>
+
+  <script src="../dist/showMo.js"></script>
+  <script src="../dist/modal2.js"></script>
+  <script src="../dist/modal3.js"></script>
+  <link rel="stylesheet" href="../css/gerir.css">
+ 
+</head>
+
+<body>
+    
+
+<button id="conta">Criar conta</button>
+    <div id="usu">
+        
+    </div>
+
+    <script>
+      var bt=document.getElementById("conta");
+      bt.addEventListener("click",function(){
+       window.location.href="exe.html";
+
+      })
+    </script>
+   
+    <!-- O Modal -->
+    <div id="myModal" class="modal">
+      <!-- Conteúdo do modal -->
+      <div class="modal-content">
+        
+        <span class="closeModalBtn" onclick="fecharModal()">&times;</span>
+        <h2>Levantar</h2>
+        
+        <input type="number" name="acount" id="idacount" placeholder="Valor"><br>
+        <input type="hidden" name="id" id="id_acount"><br>
+        <button  onclick="Levanta()">Levantamento</button>
+   
+      </div>
+    </div>
+  
+    <div id="myModal2" class="modal2">
+        <!-- Conteúdo do modal -->
+        <div class="modal-content2">
+          
+          <span class="closeModalBtn2"  onclick="fecharModal2()">&times;</span>
+          <h2>Depositar</h2>
+          
+          <input type="number" name="acount2" id="idacount2" placeholder="Valor"><br>
+          <input type="hidden" name="id2" id="id_acount2"><br>
+          <button  onclick="deposita()">depositar</button>
+          </div>
+        </div>
+  
+        <div id="myModal3" class="modal3">
+          <!-- Conteúdo do modal -->
+          <div class="modal-content3">
+            
+            <span class="closeModalBtn3"  onclick="fecharModal3()">&times;</span>
+            <h2>Transferir</h2>
+            
+            
+           <input type="number" name="tranfer" id="idtransfer" placeholder="Valor"><br><p></p>
+          <input type="number" name="id_conta" id="id_transfer" placeholder="Nº de Conta"><br>
+            <input type="hidden" name="id-conta" id="id-transfer"><br>
+            <button  onclick="transfer()">Transferir</button>
+            </div>
+          </div>
+    
+        
+       
+       
+        
+  
+</body>
+</html>
+  
+ 

@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+.modal {
+    display: none;  /* Esconde o modal por padrão */
+    position: fixed;
+    z-index: 1;  /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fundo semitransparente */
+  }
+  
+  /* Estilos para o conteúdo do modal */
+  .modal-content {
+    background-color:rgb(237, 159, 14);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+  
+  }
+  .modal-content button{
+    background-color: #fff;
+    color:rgb(237, 159, 14);
+    list-style: none;
+  }
+  .modal-content button:hover{
+    background-color: #fff;
+    color:rgb(237, 159, 14);
+  }
+  
+  .modal-content input{
+    border:none;
+    border:1px solid rgb(237, 159, 14);
+    border-radius: 5px;
+    padding:5px;
+  }
+  .modal-content span{
+    float: right;
+  }
+  
+  
+  /* Estilo do botão de fechar */
+  .close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilo quando o botão de fechar é passado com o mouse */
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  .modal2 {
+    display: none;  /* Esconde o modal por padrão */
+    position: fixed;
+    z-index: 1;  /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fundo semitransparente */
+  }
+  
+  /* Estilos para o conteúdo do modal */
+  .modal-content2 {
+  background-color:rgb(237, 159, 14);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+  
+  }
+  .modal-content2 button{
+    background-color: #fff;
+    color:rgb(237, 159, 14);
+    list-style: none;
+  }
+  .modal-content2 button:hover{
+    background-color: #fff;
+    color:rgb(237, 159, 14);
+  }
+  
+  .modal-content2 input{
+    border:none;
+    border:1px solid rgb(237, 159, 14);
+    border-radius: 5px;
+    padding:5px;
+  }
+  .modal-content2 span{
+    float: right;
+  }
+  
+  
+  /* Estilo do botão de fechar */
+  .close-btn2 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilo quando o botão de fechar é passado com o mouse */
+  .close-btn2:hover,
+  .close-btn2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal3 {
+    display: none;  /* Esconde o modal por padrão */
+    position: fixed;
+    z-index: 1;  /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fundo semitransparente */
+  }
+  
+  /* Estilos para o conteúdo do modal */
+  .modal-content3 {
+    background-color:rgb(237, 159, 14);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+  
+  }
+  .modal-content3 button{
+    background-color: #fff;
+    color:rgb(237, 159, 14);
+  }
+  .modal-content3 button:hover{
+    background-color: #fff;
+    color:rgb(237, 159, 14);
+  }
+  
+  .modal-content3 input{
+    border:none;
+    border:1px solid rgb(237, 159, 14);
+    border-radius: 5px;
+    padding:5px;
+  }
+  .modal-content3 span{
+    float: right;
+  }
+  /* Estilo do botão de fechar */
+  .close-btn3 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilo quando o botão de fechar é passado com o mouse */
+  .close-btn3:hover,
+  .close-btn3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  
+  button {
+    background-color: rgb(237, 159, 14);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+  button:hover {
+    background-color: rgb(255, 131, 69);
+  }
+  
+span{
+    cursor: pointer;
+    color:rgb(122, 115, 115);
+}
+span:hover{
+color:white;
+}
+h2{
+  color:white;
+}
+
+.contiudo{
+    border:3px solid rgb(237, 159, 14);
+    width:370px;
+    padding:15px;
+    border-radius: 10px;
+    font-family: arial;
+    
+    
+    
+}
+strong{
+  color:rgb(237, 159, 14);
+}
+#usu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    
+}
+
+.dad{
+  display:flex;
+  justify-content: center;
+  
+ 
+}
+h3{
+  text-align: center;
+ 
+}
+.child{
+  margin:5px;
+ 
+}
+
+.resul{
+  float:right;
+  margin-top: -34px;
+}

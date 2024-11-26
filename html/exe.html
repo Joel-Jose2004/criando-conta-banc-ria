@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../dist/exe.js"></script>
+    <script type="module" src="../dist/exe.js"></script>
     <style>
         
     #usuario{
@@ -16,13 +16,15 @@
     border-radius: 10px;
     font-family: arial;
     margin-top: 15%;
-    color:rgb(237, 159, 14)
+    color:rgb(237, 159, 14);
+    box-shadow: 2px 3px 15px black;
 
     }
     #usuario input{
         border-radius: 6px;
         border-style: none;
         border:1px solid black;
+        padding:6px;
     }
     #usuario button{
         background-color: rgb(237, 159, 14);
@@ -36,7 +38,7 @@
     .cad{
         display:flex;
         justify-content: center;
-     
+        
     }
     label{
         font-weight: bold;
@@ -49,7 +51,7 @@
         <h2>Abrir Conta</h2>
       <label for="idnome">Nome</label><input type="text" name="nome" id="idnome">
       <label for="idsaldo">Saldo</label><input type="number" name="saldo" id="idsaldo"><p></p>
-      <button onclick="criar()">Criar conta</button>
+      <button id="criar">Criar conta</button>
 
     </div>
 </div>

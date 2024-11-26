@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exemplo de Modal</title>
 
-  <script src="../dist/gerir.js"></script>
+  <script type="module" src="../dist/gerir.js"></script>
 
-  <script src="../dist/showMo.js"></script>
-  <script src="../dist/modal2.js"></script>
-  <script src="../dist/modal3.js"></script>
+  <script type="module" src="../dist/showMo.js"></script> 
+  <script type="module" src="../dist/modal2.js"></script>
+  <script type="module" src="../dist/modal3.js"></script>
+  <script  src="../dist/typeShow.js"></script>
+  <script type="module" src="../dist/leva.js" defer></script>
   <link rel="stylesheet" href="../css/gerir.css">
  
 </head>
@@ -40,7 +42,7 @@
         
         <input type="number" name="acount" id="idacount" placeholder="Valor"><br>
         <input type="hidden" name="id" id="id_acount"><br>
-        <button  onclick="Levanta()">Levantamento</button>
+        <button id="Levanta">Levantamento</button>
    
       </div>
     </div>
@@ -54,7 +56,7 @@
           
           <input type="number" name="acount2" id="idacount2" placeholder="Valor"><br>
           <input type="hidden" name="id2" id="id_acount2"><br>
-          <button  onclick="deposita()">depositar</button>
+          <button  id="deposita">depositar</button>
           </div>
         </div>
   
@@ -69,7 +71,7 @@
            <input type="number" name="tranfer" id="idtransfer" placeholder="Valor"><br><p></p>
           <input type="number" name="id_conta" id="id_transfer" placeholder="Nº de Conta"><br>
             <input type="hidden" name="id-conta" id="id-transfer"><br>
-            <button  onclick="transfer()">Transferir</button>
+            <button  id="transfer">Transferir</button>
             </div>
           </div>
     
@@ -77,7 +79,7 @@
        
        
         
-  
+ 
 </body>
 </html>
   

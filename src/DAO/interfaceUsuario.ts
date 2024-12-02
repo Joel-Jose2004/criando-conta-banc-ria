@@ -1,6 +1,12 @@
 export interface Conta{
-    id:number,
-    nome:string,
+    id:number,  
     saldo:number,
     num_conta:number
+}
+
+export interface Usuario{
+    id:number,
+    nome:string,
+    conta:Conta[]
+
 }

@@ -1,6 +1,6 @@
-import { Levantando } from "./gerir";
-import { depositando } from "./gerir";
-import { transferindo } from "./gerir";
+import { Levantando } from "./gerir.js";
+import { depositando } from "./gerir.js";
+import { transferindo } from "./gerir.js";
 
 
 const btl=document.getElementById("Levanta")as HTMLInputElement;

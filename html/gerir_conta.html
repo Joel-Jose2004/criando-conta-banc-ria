@@ -77,7 +77,30 @@
     
         
        
-       
+     
+<script>
+
+  // Função para verificar se o usuário está logado
+  function checkAuthentication(){
+    const token = sessionStorage.getItem('authToken');
+    return token !== null; // Se o token estiver no localStorage, o usuário está logado
+  }
+  
+  // Redireciona para a página de login caso o usuário não esteja autenticado
+  function redirectToLogin() {
+    if (!checkAuthentication()) {
+      window.location.href = 'login.html'; // Redireciona para a página de login
+    }
+  }
+  
+  // Verifica a autenticação ao acessar páginas protegidas
+  document.addEventListener('DOMContentLoaded', () => {
+    // Exemplo: Você pode chamar esta função nas páginas protegidas
+    redirectToLogin();
+  });
+  
+  </script>
+    
         
  
 </body>

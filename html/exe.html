@@ -6,26 +6,37 @@
     <title>Document</title>
     <script type="module" src="../dist/exe.js"></script>
     <style>
-        
+        body{
+    background-color: rgb(239, 239, 239);
+}
+
     #usuario{
         text-align: center;
         height: 60%;
         width: 200px;
         border:3px solid rgb(237, 159, 14);
-        padding:10px;
+        padding:18px;
     border-radius: 10px;
     font-family: arial;
     margin-top: 15%;
     color:rgb(237, 159, 14);
-    box-shadow: 2px 3px 15px black;
+    
+   background-color: white;
+   box-shadow: 1px 1px 10px black;
 
     }
     #usuario input{
         border-radius: 6px;
         border-style: none;
-        border:1px solid black;
+        border: 0.5px solid rgb(126, 124, 124);
         padding:6px;
     }
+ 
+   #usuario input:focus{
+        outline: none;
+        border-color:rgb(237, 159, 14);
+    }
+
     #usuario button{
         background-color: rgb(237, 159, 14);
     color: white;
@@ -34,6 +45,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width:89%;
     }
     .cad{
         display:flex;
@@ -55,5 +67,30 @@
 
     </div>
 </div>
+
+
+<script>
+
+// Função para verificar se o usuário está logado
+function checkAuthentication(){
+  const token = sessionStorage.getItem('authToken');
+  return token !== null; // Se o token estiver no localStorage, o usuário está logado
+}
+
+// Redireciona para a página de login caso o usuário não esteja autenticado
+function redirectToLogin() {
+  if (!checkAuthentication()) {
+    window.location.href = 'login.html'; // Redireciona para a página de login
+  }
+}
+
+// Verifica a autenticação ao acessar páginas protegidas
+document.addEventListener('DOMContentLoaded', () => {
+  // Exemplo: Você pode chamar esta função nas páginas protegidas
+  redirectToLogin();
+});
+
+</script>
+
 </body>
 </html>
